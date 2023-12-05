@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>720</width>
+        <height>1080</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Portrait</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="background" sid="510432036756782">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="692217083249550" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\azrul\Downloads\Compressed\space-shooter-game-assets\space shooter assets\background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player_ship" sid="246495218357963">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="326348891171497">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="689627483169825" speed="5">
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.551402" original-source="C:\Users\azrul\Downloads\Compressed\space-shooter-game-assets\space shooter assets\player_ship.png">
+                        <image-point name="Imagepoint 1" x="0.504854" y="-0.0841122" />
+                        <collision-poly>
+                            <point x="0.31068" y="0.299065" />
+                            <point x="0.495146" y="0" />
+                            <point x="0.68932" y="0.299065" />
+                            <point x="0.718447" y="0.495327" />
+                            <point x="0.883495" y="0.88785" />
+                            <point x="0.495146" y="0.943925" />
+                            <point x="0.116505" y="0.88785" />
+                            <point x="0.281553" y="0.495327" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="space_thrust" sid="852646877941734">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="921318431128498" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\azrul\Downloads\Compressed\space-shooter-game-assets\space shooter assets\space_thrust.png">
+                        <collision-poly>
+                            <point x="0.0530303" y="0.159091" />
+                            <point x="0.5" y="0.0681818" />
+                            <point x="0.931818" y="0.204545" />
+                            <point x="0.977273" y="0.5" />
+                            <point x="0.931818" y="0.795455" />
+                            <point x="0.5" y="0.931818" />
+                            <point x="0.0530303" y="0.840909" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="266232488213210">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="502794819998344" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="419728442166367">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="759806628991263" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\azrul\Downloads\Compressed\space-shooter-game-assets\space shooter assets\space_thrust.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="403125073131742">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="303777191959096">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="269906397116995" speed="10">
+                    <frame duration="1" hotspotX="0.545455" hotspotY="0.545455" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player_laser" sid="868436326542939">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="384556782532712">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="582343825756812" speed="5">
+                    <frame duration="1" hotspotX="0.512195" hotspotY="0.5" original-source="C:\Users\azrul\Downloads\Compressed\space-shooter-game-assets\space shooter assets\player_laser.png">
+                        <collision-poly>
+                            <point x="0.097561" y="0.75" />
+                            <point x="0" y="0.5" />
+                            <point x="0.097561" y="0.25" />
+                            <point x="0.487805" y="0" />
+                            <point x="0.902439" y="0.25" />
+                            <point x="1" y="0.5" />
+                            <point x="0.902439" y="0.75" />
+                            <point x="0.487805" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="991324914307130">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="rock" sid="291352510392900">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="903201390652657" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\azrul\Downloads\Compressed\space-shooter-game-assets\space shooter assets\rock1.png">
+                        <collision-poly>
+                            <point x="0.194444" y="0.212121" />
+                            <point x="0.5" y="0.0151515" />
+                            <point x="0.888889" y="0.121212" />
+                            <point x="0.972222" y="0.5" />
+                            <point x="0.888889" y="0.878788" />
+                            <point x="0.5" y="0.969697" />
+                            <point x="0.166667" y="0.818182" />
+                            <point x="0.0138889" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\azrul\Downloads\Compressed\space-shooter-game-assets\space shooter assets\rock2.png">
+                        <collision-poly>
+                            <point x="0.136364" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.848485" y="0.138889" />
+                            <point x="0.954545" y="0.5" />
+                            <point x="0.833333" y="0.847222" />
+                            <point x="0.5" y="0.986111" />
+                            <point x="0.136364" y="0.875" />
+                            <point x="0.0151515" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504348" hotspotY="0.504505" original-source="C:\Users\azrul\Downloads\Compressed\space-shooter-game-assets\space shooter assets\rock3.png">
+                        <collision-poly>
+                            <point x="0.173913" y="0.18018" />
+                            <point x="0.495652" y="0.0540541" />
+                            <point x="0.878261" y="0.126126" />
+                            <point x="0.982609" y="0.495495" />
+                            <point x="0.878261" y="0.873874" />
+                            <point x="0.495652" y="0.990991" />
+                            <point x="0.182609" y="0.810811" />
+                            <point x="0.0173913" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\azrul\Downloads\Compressed\space-shooter-game-assets\space shooter assets\rock4.png">
+                        <collision-poly>
+                            <point x="0.171053" y="0.178082" />
+                            <point x="0.5" y="0.0136986" />
+                            <point x="0.855263" y="0.150685" />
+                            <point x="0.993421" y="0.5" />
+                            <point x="0.868421" y="0.863014" />
+                            <point x="0.5" y="0.993151" />
+                            <point x="0.138158" y="0.856164" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50289" hotspotY="0.5" original-source="C:\Users\azrul\Downloads\Compressed\space-shooter-game-assets\space shooter assets\rock5.png">
+                        <collision-poly>
+                            <point x="0.0924855" y="0.121212" />
+                            <point x="0.49711" y="0.00757576" />
+                            <point x="0.890173" y="0.143939" />
+                            <point x="0.976879" y="0.5" />
+                            <point x="0.878613" y="0.840909" />
+                            <point x="0.49711" y="0.969697" />
+                            <point x="0.109827" y="0.856061" />
+                            <point x="0.0115607" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rock2" sid="590358455335248">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="damage" sid="221448625451468" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="919382386220911">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Rotate" sid="335283952636846">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="515249417851837" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\azrul\Downloads\Compressed\space-shooter-game-assets\space shooter assets\rock1.png">
+                        <collision-poly>
+                            <point x="0.194444" y="0.212121" />
+                            <point x="0.5" y="0.0151515" />
+                            <point x="0.888889" y="0.121212" />
+                            <point x="0.972222" y="0.5" />
+                            <point x="0.888889" y="0.878788" />
+                            <point x="0.5" y="0.969697" />
+                            <point x="0.166667" y="0.818182" />
+                            <point x="0.0138889" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\azrul\Downloads\Compressed\space-shooter-game-assets\space shooter assets\rock2.png">
+                        <collision-poly>
+                            <point x="0.136364" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.848485" y="0.138889" />
+                            <point x="0.954545" y="0.5" />
+                            <point x="0.833333" y="0.847222" />
+                            <point x="0.5" y="0.986111" />
+                            <point x="0.136364" y="0.875" />
+                            <point x="0.0151515" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504348" hotspotY="0.504505" original-source="C:\Users\azrul\Downloads\Compressed\space-shooter-game-assets\space shooter assets\rock3.png">
+                        <collision-poly>
+                            <point x="0.173913" y="0.18018" />
+                            <point x="0.495652" y="0.0540541" />
+                            <point x="0.878261" y="0.126126" />
+                            <point x="0.982609" y="0.495495" />
+                            <point x="0.878261" y="0.873874" />
+                            <point x="0.495652" y="0.990991" />
+                            <point x="0.182609" y="0.810811" />
+                            <point x="0.0173913" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\azrul\Downloads\Compressed\space-shooter-game-assets\space shooter assets\rock4.png">
+                        <collision-poly>
+                            <point x="0.171053" y="0.178082" />
+                            <point x="0.5" y="0.0136986" />
+                            <point x="0.855263" y="0.150685" />
+                            <point x="0.993421" y="0.5" />
+                            <point x="0.868421" y="0.863014" />
+                            <point x="0.5" y="0.993151" />
+                            <point x="0.138158" y="0.856164" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50289" hotspotY="0.5" original-source="C:\Users\azrul\Downloads\Compressed\space-shooter-game-assets\space shooter assets\rock5.png">
+                        <collision-poly>
+                            <point x="0.0924855" y="0.121212" />
+                            <point x="0.49711" y="0.00757576" />
+                            <point x="0.890173" y="0.143939" />
+                            <point x="0.976879" y="0.5" />
+                            <point x="0.878613" y="0.840909" />
+                            <point x="0.49711" y="0.969697" />
+                            <point x="0.109827" y="0.856061" />
+                            <point x="0.0115607" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Particles" sid="461153806345540">
+            <plugin id="Particles" />
+            <texture original-source="C:\Users\azrul\Downloads\Compressed\space-shooter-game-assets\space shooter assets\dust_particle.png" />
+        </object-type>
+        <object-type name="Sprite4" sid="918402512837661">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="926153451145864" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="286468609472821">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="629355766884466" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="797055228334140">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="465755328950637" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="147200179890660">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="945176645517636" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="843357959123121">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="644802999965858" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="4" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
